@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu-dropdown.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 1 - header -->
+      <div class="header placeholder">
+        <div>
+          <!-- menu-dropdown -->
+          <nav>
+            <!-- mobile nav bar -->
+            <div class="menu-mobile">
+              <!-- icon - left section of mobile menu -->
+              <div class="mobile-menu-hamburger">
+                <a class="svg-button" href="#popup1">
+                  <svg
+                    class="hamburger-icon"
+                    id="link-out"
+                    viewBox="0 0 100 80"
+                    width="40"
+                    height="40"
+                  >
+                    <rect width="100" height="7"></rect>
+                    <rect y="30" width="100" height="7"></rect>
+                    <rect y="60" width="100" height="7"></rect>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- allbirds logo - mid section of mobile menu -->
+              <div class="mobile-menu_allbirds-logo">
+                <img
+                  alt="allbirds logo"
+                  src="images/mobile/header/allbirds-logo.svg"
+                />
+              </div>
+
+              <!-- shopping cart - right section of mobile menu -->
+              <div class="mobile-menu_cart">
+                <img
+                  alt="shopping cart icon"
+                  src="images/mobile/header/cart-placeholder.png"
+                />
+              </div>
+            </div>
+            <!-- overlay 1 - main menu -->
+            <div id="popup1" class="overlay1">
+              <div class="popup">
+                <ul>
+                  <a href="#popup2">
+                    <li class="heading-with-chevron">
+                      MEN
+                      <img
+                        alt="righ chevron icon"
+                        src="./images/mobile/header/chevron-right.svg"
+                      /></li
+                  ></a>
+                  <a href="#popup3">
+                    <li class="heading-with-chevron">
+                      WOMEN<img
+                        alt="right chevron icon"
+                        src="./images/mobile/header/chevron-right.svg"
+                      /></li
+                  ></a>
+                  <li>OUR MATERIALS</li>
+                  <li>STORES</li>
+                  <li class="no-font-weight">Account</li>
+                  <li class="no-font-weight">Help</li>
+                </ul>
+                <!-- link to outside of page -->
+                <a class="close" href="#"></a>
+              </div>
+            </div>
+
+            <!-- overly 2 - men's menu -->
+            <div id="popup2" class="overlay2">
+              <ul>
+                <div class="mobile_mens-heading">
+                  <a href="#popup1">
+                    <li class="heading-with-left-chevron">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 48 48"
+                      >
+                        <path
+                          d="M30.83 14.83l-2.83-2.83-12 12 12 12 2.83-2.83-9.17-9.17z"
+                        />
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                      </svg>
+                      MEN
+                    </li></a
+                  >
+                </div>
+
+                <li>SHOES</li>
+                <li>APPAREL</li>
+                <li>ACCESSORIES</li>
+                <li class="last-item">COLLECTIONS</li>
+                <div class="mens-shoes-pics">
+                  <div>
+                    <img
+                      alt="brown sneakers"
+                      src="./images/mobile/header/mens-shoes1.jpeg"
+                    />
+                    <p>Running Shoes & Socks</p>
+                  </div>
+                  <div>
+                    <img
+                      alt="dark cream sneakers"
+                      src="./images/mobile/header/mens-shoes2.jpeg"
+                    />
+                    <p>New Arrivals</p>
+                  </div>
+                </div>
+              </ul>
+              <!-- link to outside of page -->
+              <a class="close" href="#"></a>
+            </div>
+
+            <!-- overly 3 - women's menu -->
+            <div id="popup3" class="overlay3">
+              <ul>
+                <div class="mobile_womens-heading">
+                  <a href="#popup1">
+                    <li class="heading-with-left-chevron">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 48 48"
+                      >
+                        <path
+                          d="M30.83 14.83l-2.83-2.83-12 12 12 12 2.83-2.83-9.17-9.17z"
+                        />
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                      </svg>
+                      WOMEN
+                    </li></a
+                  >
+                </div>
+                <li>SHOES</li>
+                <li>APPAREL</li>
+                <li>ACCESSORIES</li>
+                <li class="last-item">COLLECTIONS</li>
+                <div class="womens-shoes-pics">
+                  <div>
+                    <img
+                      alt="running shoes and socks"
+                      src="./images/mobile/header/womens-shoes1.jpeg"
+                    />
+                    <p>Running Shoes & Socks</p>
+                  </div>
+                  <div>
+                    <img
+                      alt="blue/white sneakers"
+                      src="./images/mobile/header/womens-shoes2.jpeg"
+                    />
+                    <p>New Arrivals</p>
+                  </div>
+                </div>
+              </ul>
+              <!-- link to outside of page -->
+              <a class="close" href="#"></a>
+            </div>
+
+            <!-- desktop version -->
+            <!-- desktop nav bar -->
+            <div class="menu-desktop">
+              <!-- left section of menu - men women -->
+              <div class="menu-mens-womens">
+                <div>
+                  <a class="menu-mens" href="#popup4">
+                    <p>MEN</p>
+                  </a>
+                </div>
+                <div>
+                  <a class="menu-womens" href="#popup5">
+                    <p>WOMEN</p>
+                  </a>
+                </div>
+              </div>
+              <!-- allbirds logo - mid section of desktop menu -->
+              <div class="mobile-menu_allbirds-logo">
+                <img
+                  alt="allbirds logo"
+                  src="images/mobile/header/allbirds-logo.svg"
+                />
+              </div>
+
+              <!-- user/help/cart - left section of desktop menu -->
+              <div class="desktop-menu_left-section">
+                <div><p>OUR MATERIALS</p></div>
+                <div><p>STORES</p></div>
+                <div class="destop-nav_icon">
+                  <img
+                    alt="user icon"
+                    src="./images/mobile/header/user-desktop.svg"
+                  />
+                </div>
+                <div class="destop-nav_icon">
+                  <img
+                    alt="help icon"
+                    src="./images/mobile/header/help-desktop.svg"
+                  />
+                </div>
+                <div class="destop-nav_icon cart-desktop">
+                  <img
+                    alt="cart icon"
+                    src="./images/mobile/header/cart-placeholder.png"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- mens menu -->
+            <div id="popup4" class="overlay4">
+              <div class="desktop_mens-menu_main">
+                <div class="mens-menu_shoes column">
+                  <div class="mens-menu_shoes-heading"><h4>SHOES</h4></div>
+                  <p>Running Shoes</p>
+                  <p>Everydays Shoes</p>
+                  <p>Slip-Ons</p>
+                  <p>Boat Shoes</p>
+                  <p>High Tops</p>
+                  <p>Rain Repellent Shoes</p>
+                </div>
+                <div class="mens-menu_apparel column">
+                  <div class="mens-menu_apparel-heading"><h4>APPAREL</h4></div>
+                  <p>T-Shirts</p>
+                  <p>Sweaters</p>
+                  <p>Jackets</p>
+                  <p>Underwear</p>
+                  <p>Socks</p>
+                </div>
+                <div class="mens-menu_accessories column">
+                  <div class="mens-menu_accessories-heading">
+                    <h4>ACCESSORIES</h4>
+                  </div>
+                  <p>Face Masks</p>
+                  <p>Lace Kits</p>
+                  <p>Insoles</p>
+                  <p>Digital Gift Cards</p>
+                </div>
+                <div class="mens-menu_collections column">
+                  <div class="mens-menu_collections-heading">
+                    <h4>COLLECTIONS</h4>
+                  </div>
+                  <img
+                    alt="brown sneakers"
+                    class="desktop_collections-images"
+                    src="images/mobile/header/mens-shoes1.jpeg"
+                  />
+                  <img
+                    alt="dark cream sneakers"
+                    class="desktop_collections-images"
+                    src="images/mobile/header/mens-shoes2.jpeg"
+                  />
+                </div>
+              </div>
+              <a class="close_desktop-view" href="#"></a>
+            </div>
+            <!-- link out to add -->
+
+            <!-- womens menu -->
+            <div id="popup5" class="overlay5">
+              <div class="desktop_womens-menu_main">
+                <div class="womens-menu_shoes column">
+                  <div class="womens-menu_shoes-heading"><h4>SHOES</h4></div>
+                  <p>Running Shoes</p>
+                  <p>Everydays Shoes</p>
+                  <p>Slip-Ons</p>
+                  <p>Boat Shoes</p>
+                  <p>High Tops</p>
+                  <p>Rain Repellent Shoes</p>
+                </div>
+                <div class="womens-menu_apparel column">
+                  <div class="womens-menu_apparel-heading">
+                    <h4>APPAREL</h4>
+                  </div>
+                  <p>T-Shirts</p>
+                  <p>Sweaters</p>
+                  <p>Jackets</p>
+                  <p>Underwear</p>
+                  <p>Socks</p>
+                </div>
+                <div class="womens-menu_accessories column">
+                  <div class="womens-menu_accessories-heading">
+                    <h4>ACCESSORIES</h4>
+                  </div>
+                  <p>Face Masks</p>
+                  <p>Lace Kits</p>
+                  <p>Insoles</p>
+                  <p>Digital Gift Cards</p>
+                </div>
+                <div class="womens-menu_collections column">
+                  <div class="womens-menu_collections-heading">
+                    <h4>COLLECTIONS</h4>
+                  </div>
+                  <img
+                    alt="cream shoes"
+                    class="desktop_collections-images"
+                    src="images/mobile/header/womens-shoes1.jpeg"
+                  />
+                  <img
+                    alt="pink shoes"
+                    class="desktop_collections-images"
+                    src="images/mobile/header/womens-shoes2.jpeg"
+                  />
+                </div>
+              </div>
+              <a class="close_desktop-view" href="#"></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 2 - hero -->
+      <section>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Shoes Made From Trees</h1>
+            <p>Now in New Colours</p>
+          </div>
+          <div class="hero-buttons">
+            <button>SHOP MEN</button>
+            <button>SHOP WOMEN</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 - some of our favourites -->
+      <section>
+        <div class="some-favs-heading">
+          <h2>Some Of Our Favourites</h2>
+          <div class="some-navigation">
+            <div class="some-nav-item"><h3>SHOES</h3></div>
+            <div class="some-nav-item"><h3>APPAREL</h3></div>
+            <div class="some-nav-item"><h3>BASICS</h3></div>
+          </div>
+        </div>
+        <div class="scrollable">
+          <div class="some-container">
+            <div class="card shoes-1">
+              <div class="card-img-container">
+                <img
+                  alt="some of our favourites"
+                  src="images/mobile/some of our favorites/1.jpeg"
+                />
+              </div>
+              <h3>Tree Runner</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="leaves icon"
+                    src="images/mobile/some of our favorites/leaves-icon.png"
+                  />
+                </div>
+                <div><p>Breezy Sneaker</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+              </div>
+            </div>
+            <div class="card shoes-2">
+              <div class="card-img-container">
+                <img
+                  alt="tree dasher sneakers"
+                  src="images/mobile/some of our favorites/2.jpeg"
+                />
+              </div>
+              <h3>Tree Dasher</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="leaves icon"
+                    src="images/mobile/some of our favorites/leaves-icon.png"
+                  />
+                </div>
+                <div><p>Daily Running Shoe</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+              </div>
+            </div>
+            <div class="card shoes-3">
+              <div class="card-img-container">
+                <img
+                  alt="grey wool sneakers"
+                  src="images/mobile/some of our favorites/3.jpeg"
+                />
+              </div>
+              <h3>Wool Runner</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/cloud-icon.png"
+                  />
+                </div>
+                <div><p>Cosy Sneaker</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+              </div>
+            </div>
+            <div class="card apparel-4">
+              <div class="card-img-container">
+                <img
+                  alt="green tee"
+                  src="images/mobile/some of our favorites/4.jpeg"
+                />
+              </div>
+              <h3>TrinoXO&trade; Tee</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="tee icon"
+                    src="images/mobile/some of our favorites/tee-icon.png"
+                  />
+                </div>
+                <div><p>Naturally Soft Tee</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+              </div>
+            </div>
+            <div class="card apparel-5 one">
+              <div class="card-img-container">
+                <img
+                  alt="beige wool hoodie"
+                  src="images/mobile/some of our favorites/5.jpeg"
+                />
+              </div>
+              <h3>Wool Hoodie</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/cloud-icon.png"
+                  />
+                </div>
+                <div><p>Cosy Double Knit Hoodie</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+            <div class="card apparel-6 one">
+              <div class="card-img-container">
+                <img
+                  alt="dark grey wool cardigan"
+                  src="images/mobile/some of our favorites/6.jpeg"
+                />
+              </div>
+              <h3>Wool Cardi - Long</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/cloud-icon.png"
+                  />
+                </div>
+                <div><p>Cosy Double Knit Long Cardigan</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+            <div class="card basics-7 one">
+              <div class="card-img-container">
+                <img
+                  alt="light grey boxer brief"
+                  src="images/mobile/some of our favorites/7.jpeg"
+                />
+              </div>
+              <h3>Trino&trade; Boxer Brief</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/leaf-cloud-icon.png"
+                  />
+                </div>
+                <div><p>Breathable Supportive Underwear</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+            <div class="card basics-8 one">
+              <div class="card-img-container">
+                <img
+                  alt="light grey socks"
+                  src="images/mobile/some of our favorites/8.jpeg"
+                />
+              </div>
+              <h3>Socks</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/leaf-cloud-icon.png"
+                  />
+                </div>
+                <div><p>Breezy Ankle Sock</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+            <div class="card basics-9 one">
+              <div class="card-img-container">
+                <img
+                  alt="white brief"
+                  src="images/mobile/some of our favorites/9.jpeg"
+                />
+              </div>
+              <h3>Trino&trade; Brief</h3>
+              <div class="icon-name">
+                <div>
+                  <img
+                    alt="clouds icon"
+                    src="images/mobile/some of our favorites/leaf-cloud-icon.png"
+                  />
+                </div>
+                <div><p>Mid-Rise Hiphugger Underwear</p></div>
+              </div>
+              <div class="some-buttons">
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 - image then Run Hard. Tread Light. -->
+      <section>
+        <div class="run-hard-pic"></div>
+        <div class="run-hard container">
+          <h2>Run Hard. Tread Light.</h2>
+          <p>Performance shoes made from natural materials</p>
+          <button>SHOP NOW</button>
+        </div>
+      </section>
+
+      <!-- 5 - video then Made From Nature, For Nature; take vido, include controls option-->
+      <section>
+        <div class="made-from-video_container">
+          <div class="made-from-video">
+            <iframe
+              height="100%"
+              width="100%"
+              src="https://www.youtube.com/embed/bIC6OahXqmI?&autoplay=1&mute=1&loop=1&playlist=bIC6OahXqmI&start=3&end=15&controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="made-from container">
+          <h2>Made From Nature, For Nature</h2>
+          <p>
+            We craft with planet-friendly natural materials, like merino wool
+            and eucalyptus trees, because they're our best chance for a
+            sustainable future.
+          </p>
+          <button>SEE HOW</button>
+        </div>
+      </section>
+
+      <!-- 6 - Shop By Category; placeholder images for now; needs to be scorll slider -->
+      <section>
+        <div class="shop-heading">
+          <h2>Shop By Category</h2>
+        </div>
+        <div class="scrollable">
+          <div class="shop-container">
+            <div class="category-card mens-shoes">
+              <img
+                alt="white sneakers"
+                src="images/mobile/shop by category/1-men-shoes.jpeg"
+              />
+              <h3>Men's Shoes</h3>
+            </div>
+            <div class="category-card womens-shoes">
+              <img
+                alt="grey loafers"
+                src="images/mobile/shop by category/2-womens-shoes.jpeg"
+              />
+              <h3>Women's Shoes</h3>
+            </div>
+            <div class="category-card mens-apparel">
+              <img
+                alt="grey bomber jacket"
+                src="images/mobile/shop by category/3-mens-apparel.jpeg"
+              />
+              <h3>Men's Apparel</h3>
+            </div>
+            <div class="category-card womens-apparel">
+              <img
+                alt="lime green tee"
+                src="images/mobile/shop by category/4-wom-apparel.jpeg"
+              />
+              <h3>Women's Apparel</h3>
+            </div>
+            <div class="category-card socks">
+              <img
+                alt="grey ankle socks"
+                src="images/mobile/shop by category/5-socks.jpeg"
+              />
+              <h3>Socks</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 - video then Tread Lighter; placeholder video for now -->
+      <section>
+        <div class="tread-lighter-video">
+          <iframe
+            width="560"
+            height="315"
+            frameborder="0"
+            src="https://www.youtube.com/embed/oo2BJB_-AfA?&autoplay=1&mute=1&loop=1&controls=0&playlist=oo2BJB_-AfA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="tread-lighter container">
+          <h2>Tread Lighter</h2>
+          <p>
+            The standard sneaker emits 12.5 kg CO2e. Our average shoe emits 7.6
+            kg CO2e. Better, but we want to do more. Our goal—have no carbon
+            footprint from the start. The first step to reduce our footprint is
+            to measure it. And even though we’re not at zero yet, we can be.
+            It’s all part of the plan.
+          </p>
+          <button>OUR SUSTAINABILITY APPROACH</button>
+        </div>
+      </section>
+
+      <!-- 8 - New Arrivals -->
+      <section>
+        <div class="new-heading">
+          <h2>New Arrivals</h2>
+        </div>
+        <div class="scrollable">
+          <div class="new container">
+            <div class="new-card tree-breezer">
+              <img
+                alt="pastel pink flats"
+                src="images/mobile/new arrivals/1-ballet.jpeg"
+              />
+              <h3>Women's Tree Breezer</h3>
+              <p>Limited Edition Color, Bough</p>
+            </div>
+            <div class="new-card tree-dasher">
+              <img
+                alt="lime green sneakers"
+                src="images/mobile/new arrivals/2-lime.jpeg"
+              />
+              <h3>Wonen's Tree Dasher</h3>
+              <p>Limited Edition Color, Gaia</p>
+            </div>
+            <div class="new-card tree-dasher">
+              <img
+                alt="brown sneakers"
+                src="images/mobile/new arrivals/3-brown.jpeg"
+              />
+              <h3>Men's Tree Dasher</h3>
+              <p>Limited Edition Color, Terra</p>
+            </div>
+            <div class="new-card tree-runner">
+              <img
+                alt="cream sneakers"
+                src="images/mobile/new arrivals/4-cream.jpeg"
+              />
+              <h3>Women's Tree Runner</h3>
+              <p>Limited Edition Color, Aspen</p>
+            </div>
+            <div class="new-card wool-dasher">
+              <img
+                alt="black wool sneakers"
+                src="images/mobile/new arrivals/5-black.jpeg"
+              />
+              <h3>Women's Wool Dasher Mizzle</h3>
+              <p>Limited Edition Color, Natural Black</p>
+            </div>
+            <div class="new-card wool-mid">
+              <img
+                alt="grey wool sneakers"
+                src="images/mobile/new arrivals/6-hightop.jpeg"
+              />
+              <h3>Men's Wool Dasher Mizzle - Mid</h3>
+              <p>Limited Edition Color, Mist</p>
+            </div>
+            <div class="new-card wool-lounger">
+              <img
+                alt="white wool lounger"
+                src="images/mobile/new arrivals/7-white.jpeg"
+              />
+              <h3>Women's Wool Lounger</h3>
+              <p>Classic Colour, Natural White</p>
+            </div>
+            <div class="new-card tree-runner">
+              <img
+                alt="blue/white sneakers"
+                src="images/mobile/new arrivals/8-mist.jpeg"
+              />
+              <h3>Women's Tree Dasher</h3>
+              <p>Limited Edition Color, Geyser</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 - Stories; placeholder images for now -->
+      <section>
+        <div class="stories-heading"><h2>Stories</h2></div>
+        <div class="scrollable stories-container">
+          <div class="stories container">
+            <div class="stories-card runners">
+              <img
+                alt="runners on beach scene"
+                src="images/mobile/stories/1-story placeholder.png"
+              />
+              <h3>Run Hard, Tread Light</h3>
+              <p>
+                Meet the Tree Dasher - a performance shoe made with natural
+                materials.
+              </p>
+            </div>
+            <div class="stories-card store">
+              <img
+                alt="Allbirds storefront"
+                src="images/mobile/stories/2-story placeholder.png"
+              />
+              <h3>Our Doors Are Open</h3>
+              <p>
+                The well-being of our retail communities is top priority as our
+                stores re-open around the globe
+              </p>
+            </div>
+            <div class="stories-card sheep">
+              <img
+                alt="sheep in a field"
+                src="images/mobile/stories/3-story placeholder.png"
+              />
+              <h3>We're A Certified B Corp</h3>
+              <p>
+                From the very beginning, the environment has been a stakeholder
+                here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 10 - footer -->
+    <footer>
+      <div class="footer container">
+        <!-- email text, input and sign up button -->
+        <div class="email section">
+          <div class="email-input">
+            <h4>Enter your email to stay in touch!</h4>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="email-submit">
+            <button type="submit">SIGN UP</button>
+          </div>
+        </div>
+        <!-- help/shop/company -->
+        <div class="help-shop-company section">
+          <div class="help">
+            <h4>HELP</h4>
+            <p>+44-808-164-8595</p>
+            <p>help@allbirds.co.uk</p>
+            <p>Returns/Exchanges</p>
+            <p>FAQ/Contact Us</p>
+          </div>
+          <div class="shop">
+            <h4>SHOP</h4>
+            <p>Men's Shoes</p>
+            <p>Women's Shoes</p>
+            <p>Men's Apparel</p>
+            <p>Women's Apparel</p>
+            <p>Socks</p>
+            <p>Insoles</p>
+            <p>Gift Cards</p>
+          </div>
+          <div class="company">
+            <h4>COMPANY</h4>
+            <p>Our Stores</p>
+            <p>Our Story</p>
+            <p>Our Materials</p>
+            <p>Sustainability</p>
+            <p>Partnerships</p>
+            <p>Bulk Orders</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>California Transparency Act</p>
+          </div>
+        </div>
+        <!-- follow the flock, bcop pic and flags -->
+        <div class="follow-bcorp-flags">
+          <div class="follow">
+            <h4>FOLLOW THE FLOCK</h4>
+            <p>
+              Exclusive offers, a heads up on new things, and sightings of
+              Allbirds in the wild. Oh, we have cute sheep, too. #weareallbirds
+            </p>
+            <div class="social-icons">
+              <div class="icon-footer">
+                <img
+                  alt="instagram icon"
+                  src="images/mobile/footer/1-icon-instagram.svg"
+                />
+              </div>
+              <div class="icon-footer">
+                <img
+                  alt="twitter icon"
+                  src="images/mobile/footer/2-icon-twitter.svg"
+                />
+              </div>
+              <div class="icon-footer">
+                <img
+                  alt="facebook icon"
+                  src="images/mobile/footer/3-icon-fb.svg"
+                />
+              </div>
+              <div class="icon-footer">
+                <img
+                  alt="pinterest icon"
+                  src="images/mobile/footer/4-icon-pint.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bcorp">
+            <img
+              alt="bcorp icon"
+              src="images/mobile/footer/B-corp.svg"
+              style="height: 120px"
+            />
+          </div>
+          <div class="flags">
+            <div class="icon-footer">
+              <img alt="uk flag icon" src="images/mobile/footer/flag1-uk.svg" />
+            </div>
+            <div class="icon-footer">
+              <img alt="eu flag icon" src="images/mobile/footer/flag2-eu.svg" />
+            </div>
+            <div class="icon-footer">
+              <img
+                alt="usa flag icon"
+                src="images/mobile/footer/flag3-usa.svg"
+              />
+            </div>
+            <div class="icon-footer">
+              <img alt="nz flag icon" src="images/mobile/footer/flag4-nz.svg" />
+            </div>
+            <div class="icon-footer">
+              <img alt="au flat icon" src="images/mobile/footer/flag5-au.svg" />
+            </div>
+            <div class="icon-footer">
+              <img alt="ca flag icon" src="images/mobile/footer/flag6-ca.svg" />
+            </div>
+
+            <div class="icon-footer">
+              <img alt="cn flag icon" src="images/mobile/footer/flag7-cn.svg" />
+            </div>
+
+            <div class="icon-footer">
+              <img
+                alt="sk flag icon"
+                src="images/mobile/footer/flag9-sk.png"
+                style="height: 22px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- copyright bit -->
+        <div class="copyright">
+          <p>
+            © 2021 Allbirds, Inc. All Rights Reserved. Terms, Privacy and
+            Cookies & Accessibility
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

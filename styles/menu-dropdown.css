@@ -1,0 +1,296 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+li {
+  list-style: none;
+  color: rgb(33, 42, 47);
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  line-height: 65px;
+  border-bottom: 0.3px solid lightgray;
+  font-weight: 600;
+  padding-left: 40px;
+}
+.womens-heading,
+.mens-heading {
+  line-height: 40px;
+  border-bottom: 0.2px solid lightgray;
+}
+.womens-heading p,
+.mens-heading p {
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.last-item {
+  border-bottom: 0;
+}
+/* mobile menu style - nav bar */
+.menu-mobile {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+.mobile-menu_allbirds-logo {
+  width: 100px;
+}
+.mobile-menu_cart img,
+.cart-desktop img {
+  padding-right: 7px;
+  padding-bottom: 3px;
+  width: 55px;
+}
+.menu-mobile p {
+  font-size: 14px;
+}
+/* desktop nav bar */
+.menu-desktop {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+.menu-desktop p {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+.desktop-menu_left-section {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+}
+
+.desktop-menu_left-section img {
+  margin-right: 10px;
+}
+.desktop-nav_icon {
+  width: 50px;
+}
+/* desktop allbirds icon was not working so used mobile one */
+.menu-desktop .mobile-menu_allbirds-logo {
+  position: fixed;
+  top: 9;
+  left: 47%;
+}
+/* end of desktop nav bar */
+
+.overly1 p,
+.overlay2 p,
+.overlay3 p {
+  font-size: 14px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(33, 42, 47);
+}
+.no-font-weight {
+  font-weight: 300;
+}
+
+/* heading with right chevron - overlay1 */
+.heading-with-chevron {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-with-chevron img {
+  height: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+.mobile_womens-heading,
+.mobile_mens-heading {
+  background-color: whitesmoke;
+}
+
+/* left chevron - overlay 2 and 3 */
+.heading-with-left-chevron {
+  display: flex;
+  justify-content: center;
+  padding-right: 60px;
+}
+.heading-with-left-chevron svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* style for svg icon */
+.hamburger-icon {
+  transform: scale(0.7);
+}
+
+/* style for overlays 1-5 */
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5 {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+}
+.overlay1,
+.overlay2,
+.overlay3 {
+  background-color: white;
+}
+.menu-desktop {
+  visibility: hidden;
+}
+.overlay1 {
+  background-color: whitesmoke;
+}
+.overlay2 img,
+.overlay3 img {
+  height: 40vh;
+  width: 50vw;
+  object-fit: cover;
+  padding: 5px;
+}
+
+/* target action */
+.overlay1:target {
+  visibility: visible;
+}
+.overlay2:target {
+  visibility: visible;
+}
+
+.overlay3:target {
+  visibility: visible;
+}
+
+/* style for exit link mobile */
+.close {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  height: 50px;
+  padding-left: 55px;
+  padding-top: 7px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 60px;
+}
+/* style for exit link desktop */
+.close_desktop-view {
+  max-height: 25vh;
+  min-height: 450px;
+  background-color: rgba(14, 128, 190, 0);
+  width: 100vw;
+  position: fixed;
+  top: 55%;
+  left: 0;
+  bottom: 0;
+}
+/* images */
+.mens-shoes-pics,
+.womens-shoes-pics {
+  display: flex;
+  justify-content: center;
+}
+
+/* desktop menu */
+@media (min-width: 1027px) {
+  .menu-mobile,
+  .overlay1,
+  .overlay2,
+  .overlay3 {
+    display: none;
+  }
+  .menu-desktop {
+    visibility: visible;
+  }
+}
+.menu-womens,
+.menu-mens {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+/* menu 'mens  womens' */
+.menu-mens-womens {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.menu-mens-womens p {
+  padding-right: 10px;
+  font-size: 12px;
+}
+/* main menu style */
+.overlay4,
+.overlay5 {
+  background-color: rgba(33, 42, 47, 0.829);
+}
+.desktop_mens-menu_main,
+.desktop_womens-menu_main {
+  background-color: white;
+  width: 100%;
+  max-height: 50vh;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+.overlay4 .column,
+.overlay5 .column {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  min-width: 120px;
+}
+.overlay4 .column:nth-child(4),
+.overlay5 .column:nth-child(4) {
+  padding-right: 0;
+}
+.desktop_mens-menu_main img,
+.desktop_womens-menu_main img {
+  height: 80%;
+  object-fit: cover;
+  max-height: 400px;
+  margin-right: 20px;
+}
+.desktop_mens-menu_main h4,
+.desktop_womens-menu_main h4 {
+  letter-spacing: 1.5px;
+}
+.desktop_mens-menu_main p,
+.desktop_womens-menu_main p {
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.overlay4:target {
+  visibility: visible;
+}
+.overlay5:target {
+  visibility: visible;
+}
+@media (max-width: 1026px) {
+  .overlay4,
+  .overlay5 {
+    display: none;
+  }
+}
